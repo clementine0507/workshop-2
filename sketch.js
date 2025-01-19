@@ -22,14 +22,14 @@ function draw() {
 
   if (balloonCount >= 10) {
     clearInterval(countInterval);
-    console.log("气球数量已达到 10，停止生成！");
+    console.log("Balloon count reached 10, stopping generation!");
   }
 }
 
 function mousePressed() {
   balloonCount = 0;
   counter = 0;
-  console.log("重新开始生成气球...");
+  console.log("Restarting balloon generation...");
   countInterval = setInterval(colorBalloons, 1000);
 }
 
@@ -37,6 +37,6 @@ function colorBalloons() {
   if (balloonCount < 10) {
     balloonCount++;
     counter++;
-    console.log("当前气球数量: " + balloonCount);
+    console.log("Current balloon count: " + balloonCount);
   }
 }
