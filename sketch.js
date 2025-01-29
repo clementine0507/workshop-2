@@ -4,8 +4,8 @@ let balloonCount = 0;
 
 function setup() {
   createCanvas(900, 900);
-  noStroke();
-  countInterval = setInterval(colorBalloons, 1000);
+  noSmooth();
+  countInterval = setInterval(colorBalloons, 2000);
 }
 
 function draw() {
@@ -14,7 +14,7 @@ function draw() {
   for (let i = 0; i < balloonCount; i++) {
     let x = random(width);
     let y = random(height);
-    let balloonsize = random(30, 70);
+    let balloonsize = random(10, 30);
     let balloonColor = color(random(255), random(255), random(255));
     fill(balloonColor);
     ellipse(x, y, balloonsize, balloonsize);
@@ -30,7 +30,7 @@ function mousePressed() {
   balloonCount = 0;
   counter = 0;
   console.log("Restarting balloon generation...");
-  countInterval = setInterval(colorBalloons, 1000);
+  countInterval = setInterval(colorBalloons, 2000);
 }
 
 function colorBalloons() {
