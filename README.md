@@ -23,6 +23,10 @@ New item
 
 ![image](https://github.com/user-attachments/assets/96d24a2f-b5c7-4114-a34b-8f8b746a7a20)
 
+![image](https://github.com/user-attachments/assets/29910ab3-56f8-4c11-9b2f-33b2057a5eb2)
 
-###### reflection
-I tried to add interactivity to the balloon based on an assignment, so I added the same functions as in Workshop 2. At first, my functions didn’t work, so I asked ChatGPT to help me check the code. The reason is that I hadn’t defined ‘balloonCount’.
+![image](https://github.com/user-attachments/assets/a5233ae4-edda-4b83-b6ca-4a5679bff9a4)
+
+I removed Stroke() and added noSmooth(). You can see that the circle has a black border, but the jagged effect is not noticeable, so I changed the size of the circle to a smaller size as well.
+
+
